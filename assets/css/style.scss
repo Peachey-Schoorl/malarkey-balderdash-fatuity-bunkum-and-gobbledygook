@@ -1,0 +1,196 @@
+---
+sass:
+  style: compressed
+---
+
+@charset "UTF-8";
+
+/*=======( Original Theme )===================================================*/
+@import "{{ site.theme }}";
+
+/*=======( Theme Overrides )==================================================*/
+h1, h2, h3 {
+  font-family: flood-std, sans-serif;
+}
+
+.footer {
+  display: none;
+}
+
+.markdown-body {
+  h1 {
+    font-size: 8vw;
+    font-weight: normal;
+    line-height: 0.85;
+    text-align: center;
+    width: 100%;
+  }
+
+  font-size: 125%;
+}
+
+/*=======( Custom Elements )==================================================*/
+.unimportant {
+  color: #666;
+}
+
+iframe#ytplayer {
+    border-radius: 1em;
+    box-shadow: 0em 0em 1em gray;
+    display: block;
+    margin: 0 auto 1em auto;
+    max-height: 56.25vw;
+    max-width: 100vw;
+}
+
+/*=======( Metrics )======================================================*/
+/*-------( Metrics )------------------------------------------------------*/
+
+.metrics {
+  /*border-bottom-left-radius: 10px;*/
+  /*border-bottom-right-radius: 10px;*/
+  /*float: right;*/
+  /*margin-right: 1em;*/
+  /*position: relative;*/
+  /*z-index: 1;*/
+  align-items: flex-end;
+  cursor: help;
+  display: flex;
+  flex-direction: column;
+  height: 2em;
+  overflow: hidden;
+}
+
+.metrics--active,
+.metrics:hover {
+  overflow: visible;
+}
+
+/*-------( Tag )----------------------------------------------------------*/
+.tag {
+  border-radius: 10px;
+  border: 1px solid;
+  color: #666;
+  display: block;
+  font-family: sans-serif;
+  height: 1.85em;
+  line-height: 1.85em;
+  margin: 0.35em;
+  padding: 0 0.45em 0 0;
+  width: fit-content;
+}
+
+.tag::before {
+  background: #666;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border: none;
+  color: #fff;
+  display: inline-block;
+  height: calc(1.85em - 2px);
+  margin-right: 0.35em;
+  padding: 0 0.45em;
+}
+
+/*-------( Tag - Read Time )----------------------------------------------*/
+.tag--read-time::before {
+  content: "reading time ";
+}
+
+/*-------( Tag - Size )----------------------------------------------------*/
+.tag--size {
+  color: #fff;
+}
+
+.tag--size::before {
+  content: "size ";
+}
+
+.tag--size-short {
+  background: #0f0;
+}
+
+.tag--size-medium {
+  background: #3c3;
+}
+
+.tag--size-long {
+  background: #080;
+}
+
+/*-------( Tag - Word Count )---------------------------------------------*/
+.tag--word-count::before {
+  content: "length ";
+}
+
+/*=======( Font Related )=====================================================*/
+/*-------( Fonts )------------------------------------------------------------*/
+.dyslexic,
+.dyslexic .markdown-body {
+  font-family: opendyslexic, sans-serif;
+}
+
+.flood,
+.flood .markdown-body {
+  font-family: flood-std, sans-serif;
+}
+
+.lora,
+.lora .markdown-body {
+  font-family: lora, serif;
+}
+
+/*-------( Font Switcher )----------------------------------------------------*/
+.font-switcher {
+  :hover {
+    border-bottom: 1px solid;
+    color: inherit;
+  }
+
+  background: inherit;
+  border: none;
+}
+
+.font-switcher-form {
+  margin-top: 1em;
+  text-align: right;
+  width: 99%;
+}
+
+
+/*=======( Page Specific )====================================================*/
+.gunk {
+  h1 {
+    font-size: 10vw;
+  }
+  .license {
+    display: none;
+  }
+}
+
+.gunk-comes-in-for-christmas {
+  strong {
+    display: block;
+    text-align: center;
+    margin: 1em;
+  }
+
+  .markdown-body {
+    blockquote {
+      font-size: 3em;
+      font-family: 'flood-std';
+      padding: 0;
+      border: none;
+      line-height: 1em;
+      text-align: center;
+      color: #060;
+      text-shadow: 0em 0em 0.1em #0c0, 0 0.2em 0.2em #090, 0 0.3em 1em #060;
+    }
+  }
+
+  .metrics,
+  .word-count,
+  .license {
+    display: none;
+  }
+}
