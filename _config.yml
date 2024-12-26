@@ -1,0 +1,28 @@
+---
+author: Ben & Pimmie Peachey/Schoorl
+baseurl: /malarkey-balderdash-fatuity-bunkum-and-gobbledygook
+description: Short stories, writing exercises and other cobbled together narratives
+license: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+logo: https://i.imgur.com/u6jMkYi.jpeg
+permalink: pretty
+repository: Peachey-Schoorl/malarkey-balderdash-fatuity-bunkum-and-gobbledygook
+theme: jekyll-theme-primer
+title: Malarkey, Balderdash, Fatuity, Bunkum, and Gobbledygook
+url: https://peachey-schoorl.com
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+      seo:
+        type: ShortStory
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+
+plugins:
+  - jekyll-remote-theme

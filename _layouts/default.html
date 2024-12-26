@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: " en-US" }}">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/opendyslexic@4.5.4/index.min.css">
+  <link rel="stylesheet" href="https://use.typekit.net/sqq3tch.css">
+  <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+</head>
+<body class="lora {{ page.title | slugify: ascii }}">
+<form class="font-switcher-form">
+  <button type="submit" name="font" value="dyslexic" class="font-switcher dyslexic unimportant">
+    Switch Font
+  </button>
+</form>
+
+{% if site.title and site.title != page.title %}
+<p class="metrics">
+  {% assign word_count = page.content | number_of_words %}
+  {% if word_count > 1500 %}
+    {% assign story_size = "long" %}
+  {% elsif word_count > 1000 %}
+    {% assign story_size = "medium" %}
+  {% else %}
+    {% assign story_size = "short" %}
+  {% endif %}
+  <span class="tag tag--size tag--size-{{ story_size }}">{{ story_size }}</span>
+  <span class="tag tag--read-time">{{ page.content | number_of_words | divided_by: 275 }} to {{ page.content | size | divided_by: 1000 | plus: 1 }} minutes</span>
+  <span class="tag tag--word-count">{{ page.content | number_of_words }} words</span>
+</p>
+{% endif %}
+
+<div class="container-lg px-3 my-5 markdown-body">
+  {% if page.youtube %}
+    {% assign parts = content | split: '</h1>' %}
+    {{ parts[0] }}</h1>
+    <iframe 
+      allow="clipboard-write; encrypted-media; picture-in-picture; web-share"
+      allowfullscreen
+      frameborder="0"
+      height="405"
+      id="ytplayer"
+      src="https://www.youtube.com/embed/{{ page.youtube }}?modestbranding=1"
+      title="YouTube video player"
+      type="text/html"
+      width="720"
+    ></iframe>
+    {% for item in parts offset:1 %}
+      {{ item }}
+    {% endfor %}
+  {% else %}
+    {{ content }}
+  {% endif %}
+  <hr>
+  <p class="license">
+    <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img
+        align="left"
+        alt="Creative Commons Licence"
+        height="31"
+        src="https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png"
+        width="88"
+    ></a>
+    All stories in this repository are created by <a href="https://medium.com/peachey-schoorl">Ben &amp; Pimmie
+    Peachey/Schoorl</a>
+    and licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons
+    Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+  </p>
+
+
+  {% if site.github.private != true and site.github.license %}
+  <div class="footer border-top border-gray-light mt-5 pt-3 text-right text-gray">
+    This site is open source. {% github_edit_link "Improve this page" %}.
+  </div>
+  {% endif %}
+</div>
+
+<script async defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"
+    integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"
+></script>
+
+<script async defer src="{{ "/assets/js/font-switcher.js?v=" | append: site.github.build_revision | relative_url }}"></script>
+
+<script>
+  document.addEventListener('load', () => {
+    anchors.add()
+  })
+</script>
+{% if site.google_analytics %}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ site.google_analytics }}');
+</script>
+{% endif %}
+</body>
+</html>
