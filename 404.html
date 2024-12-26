@@ -1,0 +1,32 @@
+---
+layout: default
+permalink: 404.html
+sitemap: false
+title: 404 - Page Not Found
+---
+
+{% assign entries = site.pages | concat: site.posts | sort: 'url' %}
+
+<h1>There's no such thing!</h1>
+<h2>Sound like a bunch of nonsense to me.</h2>
+
+<p>Please visit one of the following pages instead:</p>
+
+<ul>
+  {% for entry in entries %}
+    {% unless entry.url == '/404.html'
+        or entry.url == '/feed.xml'
+        or entry.url == '/redirects.json'
+        or entry.url == '/robots.txt'
+        or entry.url == '/sitemap.xml'
+        or entry.url contains '/assets/'
+        or entry.url contains '/meta/'
+    %}
+      <li>
+        <a href="{{ entry.url | prepend: site.baseurl }}">
+          {{ entry.url }}
+        </a>
+      </li>
+    {% endunless %}
+  {% endfor %}
+</ul>
