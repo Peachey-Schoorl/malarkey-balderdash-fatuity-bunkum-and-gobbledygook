@@ -1,6 +1,7 @@
 # Its dull stone eyes staring out at nothing.
 
-> A town square. A small girl. A statue of a bull's head. Inner turmoil. Uncertainty. A choice.
+> A town square. A small girl. A statue of a bull's head.
+> Inner turmoil. Uncertainty. A choice
 
 The statue had been there as long as the town had. As neither the statue, nor the town, had any markings stating the year of their creation, no one knew how old either really were. Or which came first.
 
@@ -27,6 +28,8 @@ So when her father explained to her he was doing this so they could ask the bull
 
 🙧✧🙥
 
+## The statue
+
 In the old town square, sticking out of the side of a building was the statue of the bull's head.
 
 Worn slick over the centuries by sun, rain, and the hands of the villagers, the stone head looked more like a veneration of a bull than the real thing. An idol to some unknowable god.
@@ -42,3 +45,33 @@ Not that there was a difference to the villagers, or the bull, for that matter.
 A coin was a coin, whether one offered a hefty golden piece or a humble wooden button, as long as it had a hole in it and was hung on the appropriate horn. It didn't even matter if it was hung from a dainty ribbon, a single twine, or corded grass.
 
 No one was denied their petition to grab the bull by the horns.
+
+🙧✧🙥
+
+Just like the house itself, the stone bull protruding from its side had always just been there. Built at the very starts of the village's long life.
+
+So had the ribbons and strings hanging form its horns. Some were shiny and new. Others old and weathered. But all had a coin dangling from their end.
+
+And no-one ever removed a coin, once it hung there. Never. Not even that one time, long ago, when raiders had come to town, taking everything they could carry. Including the village pump. Some said the raiders even added a few coins of their own. that was why they were never caught. And as long as their coins remained hanging there, they wouldn't be...
+
+## The girl
+
+As creased as her forehead was, so smooth was the statue's skin.
+
+They made a pair of opposites. She, small, young and colorful. He, large, ancient and dull.
+
+🙧✧🙥
+
+She had always known it was just a fancy. No amount of whishes or prayers ever changed anything. Yet here she was, with a coin on a ribbon, to hang on the horn of this statue of a bull.
+
+All of her needs and fears and desires represented by this one token. This simple gesture. This futile, useless, stupid...
+
+Taking a deep breath, she stopped her anger from welling up further.
+
+She hung the ribbon with the coin on the bull's horn and headed back home.
+
+🙧✧🙥
+
+## The coin
+
+The coin hung from a ribbon. The ribbon hung from a horn. The horn was attached to the stone head of a bull, who was attached to a house. The house stood in the square of a village in the middle of nowhere.
